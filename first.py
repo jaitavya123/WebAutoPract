@@ -11,7 +11,7 @@ try:
  data=input("type somethng")                 # taking user data into files
  a1.write(data)
  a1.close()
- print("read mode ")
+ print("Read mode ")
  a2 = open("start.txt", "r")
  #a2.seek(3)                                  # move cursor to any desired position
  #a2.tell()                                   # give current location of cursor
@@ -22,6 +22,7 @@ try:
  a3.write(" appended txt")
  a3.seek(0)
  print("after appending ==", a3.read())
+ a3.close()
 except FileExistsError as excep1:
     print(">>>>>>>>>Exception",excep1)
 except FileNotFoundError as except2:
